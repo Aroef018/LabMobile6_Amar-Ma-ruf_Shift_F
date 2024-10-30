@@ -1,20 +1,41 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title> Profil Mahasiswa </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content class="ion-padding">
+  <div class="profile-card">
+    <ion-avatar class="avatar">
+      <img src="assets/images/IMG_5408.HEIC.jpg" alt="Avatar" />
+    </ion-avatar>
+    <h2>Amar Ma'ruf</h2>
+    <p>NIM: H1D022037</p>
   </div>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Informasi Mahasiswa</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>Nama</ion-label>
+          <ion-text slot="end">Amar Ma'ruf</ion-text>
+        </ion-item>
+        <ion-item>
+          <ion-label>NIM</ion-label>
+          <ion-text slot="end">H1D022037</ion-text>
+        </ion-item>
+        <ion-item>
+          <ion-label>Prodi</ion-label>
+          <ion-text slot="end">Informatika</ion-text>
+        </ion-item>
+        <ion-item>
+          <ion-label>Universitas</ion-label>
+          <ion-text slot="end">Universitas Jenderal Soedirman</ion-text>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
